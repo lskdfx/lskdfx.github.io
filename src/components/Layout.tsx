@@ -1,4 +1,4 @@
-import { type Component, type ComponentChild, css } from "dreamland/core";
+import { type Component, type ComponentChild } from "dreamland/core";
 
 export const Layout: Component<{ children: ComponentChild }> = function (cx) {
   return (
