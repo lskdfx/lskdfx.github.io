@@ -1,8 +1,17 @@
-import { type Component, type ComponentChild, css } from "dreamland/core";
+import { type Component, type ComponentChild } from "dreamland/core";
 import { themeStore } from "../lib/store";
 import { flavorList, accents } from "../lib/themes";
 
-export const Layout: Component<{ children: ComponentChild }> = function (cx) {
+type FlavorColors = typeof flavorList[number]["colors"];
+
+type LayoutProps = { children: ComponentChild };
+type LayoutState = {
+  showAccentPicker: boolean;
+  currentFlavorName: string;
+  currentFlavorColors: FlavorColors | undefined;
+};
+
+export const Layout: Component<LayoutProps, LayoutState> = function (cx) {
   this.showAccentPicker = false;
   this.currentFlavorName = flavorList[themeStore.flavorIndex]?.name || "Mocha";
   this.currentFlavorColors = flavorList[themeStore.flavorIndex]?.colors;
@@ -28,15 +37,15 @@ export const Layout: Component<{ children: ComponentChild }> = function (cx) {
         </div>
         <div class="theme-controls" style="position: relative; display: flex; gap: 0.5rem;">
           <button class="ctrl-btn" on:click={cycleFlavor}>
-          {use(this.currentFlavorName)}
+            {use(this.currentFlavorName)}
           </button>
           <button class="ctrl-btn" on:click={() => (this.showAccentPicker = !this.showAccentPicker)}>
-          Accent
+            Accent
           </button>
           {use(this.showAccentPicker).andThen(
             <div class="accent-grid">
               {accents.map((key: string) => {
-                const colorHex = this.currentFlavorColors?.[key]?.hex || "#ffffff";
+                const colorHex = this.currentFlavorColors?.[key as keyof FlavorColors]?.hex || "#ffffff";
                 return (
                   <button
                     class={`color-dot ${themeStore.accentKey === key ? "active" : ""}`}

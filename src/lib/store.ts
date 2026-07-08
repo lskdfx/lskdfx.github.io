@@ -4,7 +4,8 @@ import { flavorList, colorKeys } from "./themes";
 export const themeStore = createStore(
   {
     flavorIndex: 0,
-    accentKey: "mauve" as string
+    accentKey: "mauve" as string,
+    showAccentPicker: false
   },
   { ident: "catppuccin-state", backing: "localstorage", autosave: "auto" }
 );
