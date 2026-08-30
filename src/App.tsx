@@ -1,6 +1,6 @@
 import { type Component } from "dreamland/core";
 import { Layout } from "./components/Layout.tsx";
-import "./style.css"; 
+import "./style.css";
 export const App: Component = function () {
   return (
     <Layout>
