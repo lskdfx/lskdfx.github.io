@@ -1,6 +1,7 @@
 import { type Component, type ComponentChild } from "dreamland/core";
 import { themeStore } from "../lib/store";
 import { flavorList, accents } from "../lib/themes";
+import { Link } from "dreamland/router";
 
 type FlavorColors = typeof flavorList[number]["colors"];
 
@@ -31,9 +32,9 @@ export const Layout: Component<LayoutProps, LayoutState> = function (cx) {
     <div class="layout">
       <nav class="nav">
         <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/projects">Projects</Link>
         </div>
         <div class="theme-controls" style="position: relative; display: flex; gap: 0.5rem;">
           <button class="ctrl-btn" on:click={cycleFlavor}>
