@@ -1,6 +1,8 @@
 # Overview
 This is my personal portfolio website, made using [dreamland.js](https://dreamland.js.org) and [Vite](https://vite.dev). I am using it to show off my projects (soon to come), and show off some basic personal information. You can find it [here](https://lskdfx.github.io)
 
+![Image of my site](./images/website.png)
+
 # Development Instructions
 1. Clone the repo
 ```sh 
