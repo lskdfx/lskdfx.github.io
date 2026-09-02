@@ -1,20 +1,20 @@
 @font-face {
   font-family: Redaction35;
-  src: url(../public/fonts/redaction/Redaction_35-Regular.woff2);
+  src: url(../fonts/redaction/Redaction_35-Regular.woff2);
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: Redaction35;
-  src: url(../public/fonts/redaction/Redaction_35-Bold.woff2);
+  src: url(../fonts/redaction/Redaction_35-Bold.woff2);
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: Redaction35;
-  src: url(../public/fonts/redaction/Redaction_35-Italic.woff2);
+  src: url(../fonts/redaction/Redaction_35-Italic.woff2);
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -22,28 +22,28 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url(../public/fonts/jetbrainsmono/JetBrainsMono-Regular.woff2);
+  src: url(../fonts/jetbrainsmono/JetBrainsMono-Regular.woff2);
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url(../public/fonts/jetbrainsmono/JetBrainsMono-Medium.woff2);
+  src: url(../fonts/jetbrainsmono/JetBrainsMono-Medium.woff2);
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url(../public/fonts/jetbrainsmono/JetBrainsMono-Bold.woff2);
+  src: url(../fonts/jetbrainsmono/JetBrainsMono-Bold.woff2);
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url(../public/fonts/jetbrainsmono/JetBrainsMono-Italic.woff2);
+  src: url(../fonts/jetbrainsmono/JetBrainsMono-Italic.woff2);
   font-weight: 400;
   font-style: italic;
   font-display: swap;
