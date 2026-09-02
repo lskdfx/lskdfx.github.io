@@ -14,13 +14,9 @@ pnpm install
 ```sh
 pnpm run dev
 ```
-```
-```
 4. Build site to /dist
 ```sh
 pnpm run build
-```
-```
 ```
 
 # AI Disclosure
